@@ -43,5 +43,5 @@ toList16 xs =
 -- length16 xs == length (toList16 xs)
 length16 :: Text -> Int
 {-# INLINE [0] length16 #-}
-length16 (TI.Text _ off len) = len - off
+length16 (TI.Text _ _ len) = len
 
